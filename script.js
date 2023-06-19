@@ -7,6 +7,8 @@ function formatNumber(number) {
         return (number / 1e9).toFixed(2) + ' billion';
     } else if (number >= 1e6) {
         return (number / 1e6).toFixed(2) + ' million';
+    } else if (number >= 1e3) {
+        return (number / 1e3).toFixed(2) + ' thousand';
     }
     return number.toString();
 }
