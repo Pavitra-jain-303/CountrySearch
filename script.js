@@ -13,8 +13,7 @@ function formatNumber(number) {
 
 
 searchBtn.addEventListener("click", () => {
-    let countryName = countryInp.value;
-    // let countryName = 'India';
+    let countryName = countryInp.value.trim();
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     // console.log(finalURL);
     fetch(finalURL).then((res) => res.json())
